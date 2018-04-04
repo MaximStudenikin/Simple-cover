@@ -1,0 +1,128 @@
+body {
+    font: 300 14px/18px Roboto
+}
+
+* {
+    box-sizing: border-box
+}
+
+.winodw__muck-up {
+    width: 310px;
+    height: 545px;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #000;
+}
+
+.winodw__title {
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.winodw__img {
+    background: url(https://source.unsplash.com/XzxnH75fVf4/750x500) no-repeat center;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.winodw__img:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(55, 125, 255, 0.7);
+}
+
+.top {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 240px;
+    color: #fff;
+    padding: 35px;
+}
+
+.winodw__label .label__text {
+    margin-top: 2px;
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.winodw__bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background: #fff;
+    top: 35px;
+    height: 50%;
+    z-index: 1;
+    padding: 0 35px;
+    position: relative;
+    color: #222;
+    padding-top: 0px;
+}
+
+.winodw__bottom:after {
+    content: '';
+    position: absolute;
+    top: -30px;
+    background: #fff;
+    left: -22px;
+    right: 0;
+    height: 100px;
+    transform: rotate(10deg);
+    width: 337px;
+    z-index: -1;
+}
+
+.winodw__text {
+    font-size: 16px;
+}
+
+.btn {
+    width: 140px;
+    border: 1px solid #027df8;
+    float: left;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn .btn__link {
+    font-family: arial;
+    font-size: 16px;
+    color: #000;
+    text-decoration: none;
+    line-height: 50px;
+    transition: all .5s ease;
+    z-index: 2;
+    position: relative;
+}
+
+.eff-4 {
+    width: 140px;
+    height: 50px;
+    left: -140px;
+    background: #027df8;
+    position: absolute;
+    transition: all .5s ease;
+    z-index: 1;
+}
+
+.btn:hover .eff-4 {
+    left: 0;
+}
+
+.btn:hover a {
+    color: #fff;
+}
