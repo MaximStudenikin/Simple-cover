@@ -7,4 +7,4 @@
 
 Пока адаптив не сделан.
 
-Демо: 
+Демо: https://maximstudenikin.github.io/Simple-cover/
