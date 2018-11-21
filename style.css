@@ -12,6 +12,12 @@ body {
     position: relative;
     overflow: hidden;
     border: 1px solid #000;
+    left: -20%;
+    transition: left  1s ease-in-out;
+}
+
+.winodw__muck-up:hover{
+    left: 0;
 }
 
 .winodw__title {
@@ -85,7 +91,7 @@ body {
 }
 
 .btn {
-    width: 140px;
+    width: 90%;
     border: 1px solid #027df8;
     float: left;
     text-align: center;
@@ -107,7 +113,7 @@ body {
 }
 
 .eff-4 {
-    width: 140px;
+    width: 0;
     height: 50px;
     left: -140px;
     background: #027df8;
@@ -118,6 +124,7 @@ body {
 
 .btn:hover .eff-4 {
     left: 0;
+    width: 100%;
 }
 
 .btn:hover a {
